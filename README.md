@@ -23,6 +23,7 @@ python3
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellte\>
 
 22      17283835        17283839        A
+
 22      17283968        17283981        AT
 
 
@@ -39,6 +40,7 @@ python3
 
 
 22      17282432        17282438        (A)n    AAAAAAA 7;44    7/7     -
+
 22      17282577        17282589        (A)n    AAAAAAAAAAAAA   13;24,14;3      13/14   minor_alelle=14;L=-3.03;Number=3;VAF=0.11
 
 
