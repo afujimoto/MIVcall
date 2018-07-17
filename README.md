@@ -38,7 +38,7 @@ python3
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellte\> \<number of reads with length of microsatellte\> \<genotype\> \<calling information (2nd major allele, number of reads, varinat allele frequency)\>
 
 ## Usage
-cd \<path to MIV_VCALL\>
+cd \<path to MIVcall\>
 
 perl RUN_MIV_CALL.pl -BAM \<Bam\> -REF \<Reference.fas\> -OUT \<Output file name\> -MS \<Microsatellte region file\> -CONF \<Configuration file (Optional)\>
 
