@@ -51,7 +51,7 @@ perl RUN_MIV_CALL.pl -BAM \<Path to bam file\> -REF \<Path to reference.fas\> -O
 
 
 ## Parameter setting in configuration file
-We consider that the patemeter set of the provided configuration file is an apprppreate for 30x coverage WGS daat. But if you want to use different parameters, please change configration file.
+We consider that the patemeter set of the provided configuration file is an apprppreate ones for 30x coverage WGS data. If you want to use different parameters, please change configration file.
 
 ## Licence
 
