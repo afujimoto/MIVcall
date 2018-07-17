@@ -53,6 +53,28 @@ perl RUN_MIV_CALL.pl -BAM \<Path to bam file\> -REF \<Path to reference.fas\> -O
 ## Parameter setting in configuration file
 We consider that the patemeter set of the provided configuration file is an apprppreate ones for 30x coverage WGS data. If you want to use different parameters, please change configration file.
 
+\##READ SELECTION PRMS##  
+mq_cutoff; Minimum mapping quality for reqd selection  
+len_cutoff1; Minimum distance between paired reads  
+len_cutoff2; Maxmum distance between paired reads  
+flanking_len_cutoff; Minimum flanking length  
+S_length_cutoff; Minimum softclip length  
+q_score_cutoff; Minimum average qility score of flanking region  
+match; Match score  
+mismatch; Mismatch score  
+SW_alignment; Smith Waterman alignmnt  
+d; Gap open penalty  
+e; Gap extention penalty  
+
+\##MS CALL PRMS##  
+BLOOD_MIN_DEPTH; Minimum depth  
+BLOOD_L; Likelihood value  
+VAF; Mimimum varinat allele frequency  
+NUM; Mimimum number of read  
+ERROR_RATE_TABLE; Path of error arte matrix   
+
+
+
 ## Licence
 
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
