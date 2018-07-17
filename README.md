@@ -35,14 +35,19 @@ python3
 
 
 ## Output file format
-\<chr\> \<start\> \<end\> \<repeat unit of microsatellte\> \<number of reads with length of microsatellte\> \<genotype\> \<calling information (2nd major allele, number of reads, varinat allele frequency)\>
+\<chr\> \<start\> \<end\> \<repeat unit of microsatellte\> \<Sequence of microsatellte> \<number of reads with length of microsatellte (length;number of reads)\> \<genotype\> \<calling information (2nd major allele, number of reads, varinat allele frequency)\>
+
+
+22      17282432        17282438        (A)n    AAAAAAA 7;44    7/7     -
+22      17282577        17282589        (A)n    AAAAAAAAAAAAA   13;24,14;3      13/14   minor_alelle=14;L=-3.03;Number=3;VAF=0.11
+
 
 ## Usage
 cd \<path to MIVcall\>
 
 perl RUN_MIV_CALL.pl -BAM \<Bam\> -REF \<Reference.fas\> -OUT \<Output file name\> -MS \<Microsatellte region file\> -CONF \<Configuration file (Optional)\>
 
-## Install
+## Example
 git clone git@github.com:afujimoto/MIVcall.git
 
 cd MIVcall
