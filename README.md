@@ -31,8 +31,6 @@ python3
 **parm.conf file**; Parameter for microsatellte calling (optional)
 
 
-
-
 ## Output file format
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellte\> \<Sequence of microsatellte> \<number of reads with length of microsatellte (length;number of reads)\> \<genotype\> \<calling information (2nd major allele, number of reads, varinat allele frequency)\>  
 22      17282432        17282438        (A)n    AAAAAAA 7;44    7/7     -  
@@ -50,6 +48,10 @@ git clone git@github.com:afujimoto/MIVcall.git
 cd MIVcall
 
 perl RUN_MIV_CALL.pl -BAM \<Path to bam file\> -REF \<Path to reference.fas\> -OUT \<Output file name\> -MS \<Microsatellte region file\> -CONF \<Configuration file (Optional)\>
+
+
+## Parameter setting in configuration file
+We consider that the patemeter set of the provided configuration file is an apprppreate for 30x coverage WGS daat. But if you want to use different parameters, please change configration file.
 
 ## Licence
 
