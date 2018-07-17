@@ -1,4 +1,4 @@
-##MIVcall
+## MIVcall
 
 A software to indetify indels in microsatellte regions
 
@@ -21,6 +21,7 @@ bam file; Sorted bam. (index file for bam (.bai) is required.)
 microsatellte region file; List of microsatellte (tab-separated text or .gz file). Microsatellte region files are provided. User defined microsatellte lies can be used. 
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellte\>
+
 22      17283835        17283839        A
 22      17283968        17283981        AT
 
