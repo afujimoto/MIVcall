@@ -43,13 +43,17 @@ cd \<path to MIVcall\>
 perl RUN_MIV_CALL.pl -BAM \<Bam\> -REF \<Reference.fas\> -OUT \<Output file name\> -MS \<Microsatellte region file\> -CONF \<Configuration file (Optional)\>
 
 ## Install
-git clone @@@@@@@
+git clone git@github.com:afujimoto/MIVcall.git
+
+cd MIVcall
+
+perl RUN_MIV_CALL.pl -BAM \<Path to bam file\> -REF \<Path to reference.fas\> -OUT \<Output file name\> -MS \<Microsatellte region file\> -CONF \<Configuration file (Optional)\>
 
 ## Licence
 
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
 
-##Contact
+## Contact
 
 Akihiro Fujimoto - fujimoto@ddm.med.kyoto-u.ac.jp
 
