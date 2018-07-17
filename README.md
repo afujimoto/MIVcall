@@ -18,7 +18,7 @@ python3
 **bam file**; Sorted bam. (index file for bam (.bai) is required.)
 
 
-**microsatellte region file**; List of microsatellte (tab-separated text or .gz file). Microsatellte region files are provided. User defined microsatellte lies can be used. 
+**microsatellte region file**; List of microsatellte (tab-separated text or .gz file). Microsatellte region files are provided. User defined microsatellte lists can be used. 
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellte\>  
 22      17283835        17283839        A  
