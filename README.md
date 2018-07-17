@@ -1,4 +1,4 @@
-## MIVcall
+# *MIVcall*
 
 A software to indetify indels in microsatellte regions
 
@@ -15,10 +15,10 @@ perl (4 or higher)
 python3
 
 ## Input file format
-bam file; Sorted bam. (index file for bam (.bai) is required.)
+*bam file*; Sorted bam. (index file for bam (.bai) is required.)
 
 
-microsatellte region file; List of microsatellte (tab-separated text or .gz file). Microsatellte region files are provided. User defined microsatellte lies can be used. 
+*microsatellte region file;* List of microsatellte (tab-separated text or .gz file). Microsatellte region files are provided. User defined microsatellte lies can be used. 
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellte\>
 
@@ -26,10 +26,10 @@ microsatellte region file; List of microsatellte (tab-separated text or .gz file
 22      17283968        17283981        AT
 
 
-reference genome file; Fasta file of reference genome (index file for samtools is required.)
+*reference genome file*; Fasta file of reference genome (index file for samtools is required.)
 
 
-parm.conf file; Parameter for microsatellte calling (optional)
+*parm.conf file*; Parameter for microsatellte calling (optional)
 
 
 
