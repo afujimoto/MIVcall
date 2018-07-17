@@ -73,7 +73,8 @@ VAF; Mimimum varinat allele frequency
 NUM; Mimimum number of read  
 ERROR_RATE_TABLE; Path of error arte matrix   
 
-
+## Preformance
+Performance of this tool is provided in Supplymanraty information of Fujimoto et al. (bioaxiv).
 
 ## Licence
 
