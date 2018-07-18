@@ -54,24 +54,24 @@ perl RUN_MIV_CALL.pl -BAM \<Path to bam file\> -REF \<Path to reference.fas\> -O
 We consider that the patemeter set of the provided configuration file is an apprppreate ones for 30x coverage WGS data. If you want to use different parameters, please change configration file.
 
 \##READ SELECTION PRMS##  
-mq_cutoff; Minimum mapping quality for reqd selection  
-len_cutoff1; Minimum distance between paired reads  
-len_cutoff2; Maxmum distance between paired reads  
-flanking_len_cutoff; Minimum flanking length  
-S_length_cutoff; Minimum softclip length  
-q_score_cutoff; Minimum average qility score of flanking region  
-match; Match score  
-mismatch; Mismatch score  
-SW_alignment; Smith Waterman alignmnt  
-d; Gap open penalty  
-e; Gap extention penalty  
+mq_cutoff; Minimum mapping quality for reqd selection (20)  
+len_cutoff1; Minimum distance between paired reads (100)  
+len_cutoff2; Maxmum distance between paired reads (550)   
+flanking_len_cutoff; Minimum flanking length (3)  
+S_length_cutoff; Minimum softclip length (3)  
+q_score_cutoff; Minimum average qility score of flanking region (10)  
+SW_alignment; Perform Smith-Waterman alignmnt (1; Yes, 0; No) (0)    
+match; Match score (1)   
+mismatch; Mismatch score (1)   
+d; Gap open penalty (1)  
+e; Gap extention penalty (1)  
 
 \##MS CALL PRMS##  
-BLOOD_MIN_DEPTH; Minimum depth  
-BLOOD_L; Likelihood value  
-VAF; Mimimum varinat allele frequency  
-NUM; Mimimum number of read  
-ERROR_RATE_TABLE; Path of error arte matrix   
+MIN_DEPTH; Minimum depth (10)  
+L; Likelihood value (-3) 
+VAF; Mimimum varinat allele frequency (0.05)  
+NUM; Mimimum number of read (2) 
+ERROR_RATE_TABLE; Path of error arte matrix (VIMcall/Error_rate_matrix.txt)   
 
 ## Preformance
 Performance of this tool is provided in Supplymanraty information of Fujimoto et al. (bioaxiv).
