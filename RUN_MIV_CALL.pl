@@ -27,13 +27,12 @@ GetOptions(
 );
 
 my $message = << '&EOT&';
-Usage: perl <path>/RUN_MIV_CALL.pl [-BAM <input file (bam)>] [-OUT <output directory>] [-MS <MS location file>] [-REF <Reference file (fasta)>] [-CONF <Config file (Optional)>] [-h (help)]
+Usage: perl <path>/RUN_MIV_CALL.pl [-BAM <input file (bam)>] [-OUT <output directory>] [-MS <MS location file>] [-CONF <Config file (Optional)>] [-h (help)]
 
 -BAM  		Input bam file (Required)
 -MS		MS location file (Required)
 -OUTPUT_F	Output file (Required)
 -CONF		Config file (Optional)
--REF    	Reference genome (Index file for samtools is also required.) (Required)
 -help      	Print this message
 &EOT&
 
@@ -49,7 +48,6 @@ if(! $config_file){
 if( ! -f $BLOOD_BAM){print"$BLOOD_BAM Normal bam file !!\n"; exit(0)}
 if( ! $OUTPUT_FILE){print"$OUTPUT_FILE Outout file !!\n"; exit(0)}
 if( ! -f $RMSK){print"$RMSK MS location file !!\n"; exit(0)}
-if( ! -f $bwa_ref){print"$bwa_ref Reference file !!\n"; exit(0)}
 if( ! -f $config_file){print"$config_file Config file !!\n"; exit(0)}
 
 #####################GET PRMS###############################
@@ -76,7 +74,13 @@ while(<CONF>){
 ############################################################
 
 ####################MAKE CMD################################
-my %normal_option = ("REF" => $bwa_ref, "MQ" => $normal_prms{mq_cutoff}, "LL" => $normal_prms{len_cutoff1}, "ML" => $normal_prms{len_cutoff2}, "FL" => $normal_prms{flanking_len_cutoff}, "SL" => $normal_prms{S_length_cutoff}, "BQ" => $normal_prms{q_score_cutoff}, "SW" => $normal_prms{SW_alignment}, "GO" => $normal_prms{d}, "GE" => $normal_prms{e}, "MS" => $RMSK, "I" => $BLOOD_BAM);
+
+if ($normal_prms{SW_alignment} == 1 and ! $normal_prms{REF}){
+	print"Please set path to reference fasta file!\n";
+	exit(0);
+}
+
+my %normal_option = ("REF" => $normal_prms{REF}, "MQ" => $normal_prms{mq_cutoff}, "LL" => $normal_prms{len_cutoff1}, "ML" => $normal_prms{len_cutoff2}, "FL" => $normal_prms{flanking_len_cutoff}, "SL" => $normal_prms{S_length_cutoff}, "BQ" => $normal_prms{q_score_cutoff}, "SW" => $normal_prms{SW_alignment}, "GO" => $normal_prms{d}, "GE" => $normal_prms{e}, "MS" => $RMSK, "I" => $BLOOD_BAM);
 
 my $BC_merge_file = "$SRC"."/merged.txt";
 

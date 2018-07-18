@@ -40,14 +40,14 @@ python3
 ## Usage
 cd \<path to MIVcall\>
 
-perl RUN_MIV_CALL.pl -BAM \<Bam\> -REF \<Reference.fas\> -OUT \<Output file name\> -MS \<Microsatellte region file\> -CONF \<Configuration file (Optional)\>
+perl RUN_MIV_CALL.pl -BAM \<Bam\> -OUT \<Output file name\> -MS \<Microsatellte region file\> -CONF \<Configuration file (Optional)\>
 
 ## Example
 git clone git@github.com:afujimoto/MIVcall.git
 
 cd MIVcall
 
-perl RUN_MIV_CALL.pl -BAM \<Path to bam file\> -REF \<Path to reference.fas\> -OUT \<Output file name\> -MS \<Microsatellte region file\> -CONF \<Configuration file (Optional)\>
+perl RUN_MIV_CALL.pl -BAM test.bam -OUT test -MS ./MS_list/22.MS.txt.gz
 
 
 ## Parameter setting in configuration file
@@ -61,6 +61,7 @@ flanking_len_cutoff; Minimum flanking length (3)
 S_length_cutoff; Minimum softclip length (3)  
 q_score_cutoff; Minimum average qility score of flanking region (10)  
 SW_alignment; Perform Smith-Waterman alignmnt (1; Yes, 0; No) (0)    
+REF; Path to reference.fasta file (samtools index file is also required.)  
 match; Match score (1)   
 mismatch; Mismatch score (1)   
 d; Gap open penalty (1)  
