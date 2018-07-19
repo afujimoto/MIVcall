@@ -38,16 +38,13 @@ python3
 
 
 ## Usage
-`cd \<path to MIVcall\>`
-
-`perl RUN_MIV_CALL.pl -BAM \<Bam\> -OUT \<Output file name\> -MS \<Microsatellte region file\> -CONF \<Configuration file (Optional)\>`
+`cd <path to MIVcall>`
+perl RUN_MIV_CALL.pl -BAM <Bam> -OUT <Output file name> -MS <Microsatellte region file> -CONF <Configuration file (Optional)>`
 
 ## Example
-`git clone https://github.com/afujimoto/MIVcall.git`
-
-`cd MIVcall`
-
-`perl RUN_MIV_CALL.pl -BAM test.bam -OUT test -MS ./MS_list/22.MS.txt.gz`
+`git clone https://github.com/afujimoto/MIVcall.git
+cd MIVcall
+perl RUN_MIV_CALL.pl -BAM test.bam -OUT test -MS ./MS_list/22.MS.txt.gz`
 
 
 ## Parameter setting in configuration file
