@@ -109,11 +109,11 @@ my $CALL = "perl $SRC/bin/MIV_CALL.pl -I $OUTPUT_FILE.NUMBER $call_option_str > 
 ############################################################
 
 ####################RUN#####################################
-print"GET_READS_FROM_NORMAL\n";
+print"Getting Reads in MS regions\n";
 #print"$GET_READS_FROM_NORMAL\n";
 system("$GET_READS_FROM_NORMAL");
 
-print"GIM CALL\n";
+print"Varint Call\n";
 #print"$CALL\n";
 system("$CALL");
 
