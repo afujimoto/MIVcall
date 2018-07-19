@@ -18,14 +18,11 @@ python
 **bam file**; Sorted bam (index file for bam (.bai) is required.)
 
 
-**microsatellte region file**; List of microsatellte (tab-separated text or .gz file). Microsatellte region files are provided. User defined microsatellte lists can be used. 
+**microsatellte region file**; List of microsatellte (tab-separated text or .gz file). Microsatellte region files are provided in MS_list directory. User defined microsatellte lists can be used. 
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellte\>  
 22      17283835        17283839        A  
 22      17283968        17283981        AT  
-
-
-**reference genome file**; Fasta file of reference genome (index file for samtools is required)
 
 
 **parm.conf file**(optional) ; Parameter file for microsatellte calling (VIMcall/parm.conf is used. If you want to change paramters, please change this file (see below))
