@@ -70,7 +70,7 @@ e; Gap extention penalty (1)
 MIN_DEPTH; Minimum depth (10)  
 L; Likelihood value (-3)   
 VAF; Mimimum varinat allele frequency (0.05)    
-NUM; Mimimum number of read (2) 
+NUM; Mimimum number of read (2)  
 ERROR_RATE_TABLE; Path of error arte matrix (VIMcall/Error_rate_matrix.txt)   
 
 ## Preformance
