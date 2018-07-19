@@ -43,7 +43,7 @@ GetOptions(
 );
 
 my $message = << '&EOT&';
-Usage: perl <path>/GET_READ.BLOOD.pl [-I <input file (bam)>] [-MS <microsatellte location file>] [-REF <Reference file (fasta)>] [-h]
+Usage: perl <path>/GET_READ.BLOOD.pl [-I <input file (bam)>] [-MS <microsatellte location file>] [-h]
 -I      Input bam file (Required)
 -MS     MS location file (Required)
 -REF    Reference genome (Index file for samtools is required.) (Required)
@@ -64,7 +64,7 @@ if($help == OPT_YES){
         exit(0);
 }
 
-if(! $BAM or ! $RMSK or ! $bwa_ref){print STDERR $message.LF; exit(0);}
+if(! $BAM or ! $RMSK){print STDERR $message.LF; exit(0);}
 
 my %option_hash = ("I" => "/dev/stdin", "REF" => $bwa_ref, "MQ" => $mq_cutoff, "LL" => $len_cutoff1, "ML" => $len_cutoff2, "FL" => $flanking_len_cutoff, "SL" => $S_length_cutoff, "BQ" => $q_score_cutoff, "SW" => $SW_alignment, "GO" => $d, "GE" => $e);
 
