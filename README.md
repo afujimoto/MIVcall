@@ -43,7 +43,7 @@ cd \<path to MIVcall\>
 perl RUN_MIV_CALL.pl -BAM \<Bam\> -OUT \<Output file name\> -MS \<Microsatellte region file\> -CONF \<Configuration file (Optional)\>
 
 ## Example
-git clone git@github.com:afujimoto/MIVcall.git
+git clone https://github.com/afujimoto/MIVcall.git
 
 cd MIVcall
 
