@@ -18,9 +18,8 @@ my ($CANCER_BAM, $BLOOD_BAM, $OUTPUT_FILE, $RMSK, $bwa_ref, $config_file, $help)
 
 GetOptions(
         "BAM=s" => \$BLOOD_BAM,
-	"OUTPUT_F=s" => \$OUTPUT_FILE,
+		"OUT=s" => \$OUTPUT_FILE,
         "MS=s" => \$RMSK,
-        "REF=s" => \$bwa_ref,
         "CONF=s" => \$config_file,
         "h" => \$help
 #        "help" => \$help
@@ -31,7 +30,7 @@ Usage: perl <path>/RUN_MIV_CALL.pl [-BAM <input file (bam)>] [-OUT <output direc
 
 -BAM  		Input bam file (Required)
 -MS		MS location file (Required)
--OUTPUT_F	Output file (Required)
+-OUT	Output file (Required)
 -CONF		Config file (Optional)
 -help      	Print this message
 &EOT&
