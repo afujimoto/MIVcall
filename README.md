@@ -73,6 +73,9 @@ ERROR_RATE_TABLE; Path of error arte matrix (VIMcall/Error_rate_matrix.txt)
 ## Preformance
 Performance of this tool is provided in Supplymanraty information of Fujimoto et al. (bioaxiv).
 
+## Licence
+GPL
+
 ## Contact
 
 Akihiro Fujimoto - fujimoto@ddm.med.kyoto-u.ac.jp
