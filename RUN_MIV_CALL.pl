@@ -116,5 +116,6 @@ system("$CALL");
 
 #unlink $OUTPUT_FILE.NUMBER;
 print"OUTPUT; $OUTPUT_FILE\n";
-unlink($OUTPUT_FILE.NUMBER)
+my $OUTPUT_FILE_NUMBER = "$OUTPUT_FILE".".NUMBER";
+unlink($OUTPUT_FILE_NUMBER)
 ############################################################
