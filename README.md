@@ -62,8 +62,6 @@ S_length_cutoff; Minimum softclip length (3)
 q_score_cutoff; Minimum average qility score of flanking region (10)  
 SW_alignment; Perform Smith-Waterman alignmnt (1; Yes, 0; No) (0)    
 REF; Path to reference.fasta file (samtools index file is also required.)  
-match; Match score (1)   
-mismatch; Mismatch score (1)   
 d; Gap open penalty (1)  
 e; Gap extention penalty (1)  
 

@@ -88,9 +88,9 @@ my %call_option = ("D" => $call_prms{MIN_DEPTH}, "L" => $call_prms{L}, "ER" => "
 
 my @option = ();
 for my $name (keys %normal_option){
-		if ($normal_prms{SW_alignment} == 0 and $name eq "REF"){
-			next;
-		}
+		if ($normal_prms{SW_alignment} == 0 and $name eq "REF"){next;}
+		if ($normal_prms{SW_alignment} == 0 and $name eq "GO"){next;}
+		if ($normal_prms{SW_alignment} == 0 and $name eq "GE"){next;}
         my $tmp = "-"."$name"." "."$normal_option{$name}";
         push(@option, $tmp);
 }
