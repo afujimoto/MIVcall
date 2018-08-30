@@ -1,11 +1,11 @@
 # *MIVcall*
 
-A software to indetify indels in microsatellte regions
+A software to indetify indels in microsatellite regions
 
 Overview
-1. Extract reads covering microsatellte regions from a bam file
-2. Analyze repeat length 
-3. Calculate likelihood using an error rate matrix, and identify indels in microsatellte regions
+1. Extract reads covering microsatellite regions from a bam file
+2. Analyze repeat lengths 
+3. Calculate likelihood using an error rate matrix, and identify indels in microsatellite regions
 
 ## Requirement
 samtools (0.1.18 or higher)
@@ -18,18 +18,18 @@ python
 **bam file**; Sorted bam (index file for bam (.bai) is required.)
 
 
-**microsatellte region file**; List of microsatellte (tab-separated text or .gz file). Microsatellte region files are provided in MS_list directory. User defined microsatellte lists can be used. 
+**microsatellite region file**; List of microsatellite (tab-separated text or .gz file). Microsatellite region files are provided in MS_list directory. User defined microsatellite lists can be used. 
 
-\<chr\> \<start\> \<end\> \<repeat unit of microsatellte\>  
+\<chr\> \<start\> \<end\> \<repeat unit of microsatellite\>  
 22      17283835        17283839        A  
 22      17283968        17283981        AT  
 
 
-**parm.conf file**(optional) ; Parameter file for microsatellte calling (VIMcall/parm.conf is used. If you want to change paramters, please change this file (see below))
+**parm.conf file**(optional) ; Parameter file for microsatellite calling (VIMcall/parm.conf is used by default. If you want to change parameters, please change this file (see below))
 
 
 ## Output file format
-\<chr\> \<start\> \<end\> \<repeat unit of microsatellte\> \<Sequence of microsatellte> \<number of reads with length of microsatellte (length;number of reads)\> \<genotype\> \<calling information (2nd major allele, number of reads, varinat allele frequency)\>  
+\<chr\> \<start\> \<end\> \<repeat unit of microsatellite\> \<Sequence of microsatellite> \<number of reads with length of microsatellte (length;number of reads)\> \<genotype\> \<calling information (2nd major allele, number of reads, variant allele frequency)\>  
 22      17282432        17282438        (A)n    AAAAAAA 7;44    7/7     -  
 22      17282577        17282589        (A)n    AAAAAAAAAAAAA   13;24,14;3      13/14   minor_alelle=14;L=-3.03;Number=3;VAF=0.11 
 
@@ -49,16 +49,16 @@ perl RUN_MIV_CALL.pl -BAM ./test/test.bam -OUT ./test/test.out -MS ./test/test_M
 
 
 ## Parameter setting in configuration file
-We consider that the patemeter set of the provided configuration file is an apprppreate ones for 30x coverage WGS data. If you want to use different parameters, please change parm.conf file.
+We consider the parameter set in the provided configuration apprppreate for 30x coverage WGS data. If you would like to use different parameters, please make changes in the parm.config file. 
 
 \##READ SELECTION PRMS##  
-mq_cutoff; Minimum mapping quality for reqd selection (20)  
+mq_cutoff; Minimum mapping quality for read selection (20)  
 len_cutoff1; Minimum distance between paired reads (100)  
 len_cutoff2; Maxmum distance between paired reads (550)   
 flanking_len_cutoff; Minimum flanking length (3)  
 S_length_cutoff; Minimum softclip length (3)  
-q_score_cutoff; Minimum average qility score of flanking region (10)  
-SW_alignment; Perform Smith-Waterman alignmnt (1; Yes, 0; No) (0)    
+q_score_cutoff; Minimum average quality score of flanking region (10)  
+SW_alignment; Perform Smith-Waterman alignment (1; Yes, 0; No) (0)    
 REF; Path to reference.fasta file (samtools index file is also required.)  
 d; Gap open penalty (1)  
 e; Gap extention penalty (1)  
@@ -66,12 +66,12 @@ e; Gap extention penalty (1)
 \##MS CALL PRMS##  
 MIN_DEPTH; Minimum depth (10)  
 L; Likelihood value (-3)   
-VAF; Mimimum varinat allele frequency (0.05)    
+VAF; Mimimum variant allele frequency (0.05)    
 NUM; Mimimum number of read (2)  
-ERROR_RATE_TABLE; Path of error arte matrix (VIMcall/Error_rate_matrix.txt)   
+ERROR_RATE_TABLE; Path of error rate matrix (VIMcall/Error_rate_matrix.txt)   
 
 ## Preformance
-Performance of this tool is provided in Supplymanraty information of Fujimoto et al. (bioaxiv).
+Performance of this tool is provided in Fujimoto et al. (bioRxiv).
 
 ## Licence
 GPL
