@@ -43,7 +43,7 @@ MS lists for the GRCh37 and 38 are available from https://github.com/afujimoto/M
 
 
 ## Output file format
-\<chr\> \<start\> \<end\> \<repeat unit of microsatellite\> \<Sequence of microsatellite> \<number of reads with length of microsatellite (length;number of reads)\> \<genotype\> \<calling information (2nd major allele, number of reads, variant allele frequency)\>  
+\<chr\> \<start\> \<end\> \<repeat unit of microsatellite\> \<sequence of microsatellite> \<number of reads with length of microsatellite (length;number of reads)\> \<genotype\> \<calling information (2nd major allele, number of reads, variant allele frequency)\>  
 22      17282432        17282438        (A)n    AAAAAAA 7;44    7/7     -  
 22      17282577        17282589        (A)n    AAAAAAAAAAAAA   13;24,14;3      13/14   minor_allele=14;L=-3.03;Number=3;VAF=0.11 
 
