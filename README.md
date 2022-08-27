@@ -14,7 +14,7 @@ samtools (1.1.14 or higher)
 
 perl (5 or higher)
 
-python (3)
+python3
 
 ## Input file format
 **bam file**; Sorted bam (index file for bam (.bai) is required.)
