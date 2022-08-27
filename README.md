@@ -22,6 +22,7 @@ python (3)
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellite\>  
 chr1    822365  822369  G
+
 chr1    834138  834143  A
 chr1    834753  834758  G
 chr1    834982  834986  G
