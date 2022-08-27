@@ -18,7 +18,7 @@ python (3)
 **bam file**; Sorted bam (index file for bam (.bai) is required.)
 
 
-**microsatellite region file**; List of microsatellite (tab-separated text or .gz file). Microsatellite region files are provided in the MS_list directory. User defined microsatellite lists can be used. 
+**microsatellite region file**; List of microsatellite (tab-separated text file). Microsatellite region files are provided in the MS_list directory. User defined microsatellite lists can be used. 
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellite\>  
 chr1    822365  822369  G  
