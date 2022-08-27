@@ -8,17 +8,17 @@ Overview
 3. Calculate likelihood using an error rate matrix, and identify indels in microsatellite regions
 
 ## Requirement
-samtools (0.1.18 or higher)
+samtools (1.1.14 or higher)
 
 perl (5 or higher)
 
-python
+python (3)
 
 ## Input file format
 **bam file**; Sorted bam (index file for bam (.bai) is required.)
 
 
-**microsatellite region file**; List of microsatellite (tab-separated text or .gz file). Microsatellite region files are provided in MS_list directory. User defined microsatellite lists can be used. 
+**microsatellite region file**; List of microsatellite (tab-separated text or .gz file). Microsatellite region files are provided in the MS_list directory. User defined microsatellite lists can be used. 
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellite\>  
 22      17283835        17283839        A  
@@ -31,13 +31,13 @@ python
 ## Output file format
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellite\> \<Sequence of microsatellite> \<number of reads with length of microsatellte (length;number of reads)\> \<genotype\> \<calling information (2nd major allele, number of reads, variant allele frequency)\>  
 22      17282432        17282438        (A)n    AAAAAAA 7;44    7/7     -  
-22      17282577        17282589        (A)n    AAAAAAAAAAAAA   13;24,14;3      13/14   minor_alelle=14;L=-3.03;Number=3;VAF=0.11 
+22      17282577        17282589        (A)n    AAAAAAAAAAAAA   13;24,14;3      13/14   minor_allele=14;L=-3.03;Number=3;VAF=0.11 
 
 
 ## Usage
 ```
 cd <path to MIVcall>
-perl RUN_MIV_CALL.pl -BAM <Bam> -OUT <Output file name> -MS <Microsatellte region file> -CONF <Configuration file (Optional)>
+perl MIVcall.pl -BAM <Bam> -OUT <Output file name> -MS <Microsatellte region file> -MS2 <Microsatellte region file> -CONF <Configuration file (Optional)>
 ```
 
 ## Example
@@ -54,7 +54,7 @@ We consider the parameter set in the provided configuration apprppreate for 30x 
 \##READ SELECTION PRMS##  
 mq_cutoff; Minimum mapping quality for read selection (20)  
 len_cutoff1; Minimum distance between paired reads (100)  
-len_cutoff2; Maximum distance between paired reads (550)   
+len_cutoff2; Maximum distance between paired reads (1000)   
 flanking_len_cutoff; Minimum flanking length (3)  
 S_length_cutoff; Minimum softclip length (3)  
 q_score_cutoff; Minimum average quality score of flanking region (10)  
@@ -71,15 +71,15 @@ NUM; Mimimum number of read (2)
 ERROR_RATE_TABLE; Path of error rate matrix (VIMcall/Error_rate_matrix.txt)   
 
 ## Preformance
-Performance of this tool is provided in Fujimoto et al. (bioRxiv).
+Performance of this tool is described in Fujimoto et al. (Genome Research (2020)) and Gochi et al. (Human Genetics (2022)).
 
 ## Licence
 GPL
 
 ## Contact
 
-Akihiro Fujimoto - fujimoto@ddm.med.kyoto-u.ac.jp
+Akihiro Fujimoto - afujimoto@m.u-tokyo.ac.jp
 
-https://sites.google.com/site/fujimotoakihironopeji/home/english
+http://www.humgenet.m.u-tokyo.ac.jp/index.en.html
 
 ## Update
