@@ -53,7 +53,7 @@ MS lists for the GRCh37 and 38 are available from https://github.com/afujimoto/M
 ## Usage
 ```
 cd <path to MIVcall>
-perl MIVcall.pl -BAM <Bam> -OUT <Output file name> -MS <Microsatellte region file> -MS2 <Microsatellte region file> -CONF <Configuration file (Optional)>
+perl MIVcall.pl -BAM <Bam> -OUT <Output file name> -MS <MS list1> -MS2 <MS list2> -CONF <Configuration file (Optional)>
 ```
 
 ## Example
