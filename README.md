@@ -21,9 +21,10 @@ python (3)
 **microsatellite region file**; List of microsatellite (tab-separated text or .gz file). Microsatellite region files are provided in the MS_list directory. User defined microsatellite lists can be used. 
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellite\>  
-22      17283835        17283839        A  
-22      17283968        17283981        AT  
-
+chr1    822365  822369  G
+chr1    834138  834143  A
+chr1    834753  834758  G
+chr1    834982  834986  G
 
 **parm.conf file**(optional) ; Parameter file for microsatellite calling (VIMcall/parm.conf is used by default. If you want to change parameters, please change this file (see below))
 
