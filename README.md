@@ -56,7 +56,7 @@ perl MIVcall.pl -BAM <Bam> -OUT <Output file name> -MS <Microsatellte region fil
 ```
 git clone https://github.com/afujimoto/MIVcall.git
 cd MIVcall
-perl MIVcall.pl -BAM ./test/test.bam -OUT ./test/test.out -MS MS_GRCh37.txt -MS2 MS_GRCh37.region.txt
+perl MIVcall.pl -BAM ./test/test.bam -OUT ./test/test.out -MS ./test/MS_GRCh37.test.txt -MS2 ./test/MS_GRCh37.region.test.txt
 ```
 
 
