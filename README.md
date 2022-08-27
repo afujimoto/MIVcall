@@ -18,13 +18,22 @@ python (3)
 **bam file**; Sorted bam (index file for bam (.bai) is required.)
 
 
-**microsatellite region file**; List of microsatellite (tab-separated text file). Microsatellite region files are provided in the MS_list directory. User defined microsatellite lists can be used. 
+**microsatellite region file (MS list1)**; List of microsatellite (tab-separated text file). Microsatellite region files are provided in the MS_list directory. User defined microsatellite lists can be used. 
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellite\>  
 chr1    822365  822369  G  
 chr1    834138  834143  A  
 chr1    834753  834758  G  
 chr1    834982  834986  G
+
+**microsatellite region file (MS list2)**; List of microsatellite (tab-separated text file). Microsatellite region files are provided in the MS_list directory. User defined microsatellite lists can be used. 
+
+\<chr\> \<start\> \<end\> \<repeat unit of microsatellite\>  
+chr1    822355  822379  G  
+chr1    834128  834153  A  
+chr1    834743  834768  G  
+chr1    834972  834996  G  
+
 
 **parm.conf file**(optional) ; Parameter file for microsatellite calling (VIMcall/parm.conf is used by default. If you want to change parameters, please change this file (see below))
 
