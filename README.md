@@ -1,6 +1,6 @@
 # *MIVcall*
 
-A software to identify indels in microsatellite regions.
+A software to identify indels in microsatellite regions.  
 MIVcall counts the length of each MS in each read. When multiple lengths are observed in a MS locus in a sample, the most frequent pattern is assumed to be present, and the second most frequent pattern is examined. The likelihood value (L) is calculated based on the number of reads and the difference in length between the most frequent pattern and the second most frequent pattern. Genotypes are determined based on the likelihood value, the number of reads of each allele, and variant allele frequency (VAF). 
 
 
