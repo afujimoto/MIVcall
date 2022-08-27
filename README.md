@@ -1,6 +1,8 @@
 # *MIVcall*
 
-A software to identify indels in microsatellite regions
+A software to identify indels in microsatellite regions.
+MIVcall counts the length of each MS in each read. When multiple lengths are observed in a MS locus in a sample, the most frequent pattern is assumed to be present, and the second most frequent pattern is examined. The likelihood value (L) is calculated based on the number of reads and the difference in length between the most frequent pattern and the second most frequent pattern. Genotypes are determined based on the likelihood value, the number of reads of each allele, and variant allele frequency (VAF). 
+
 
 Overview
 1. Extract reads covering microsatellite regions from a bam file
@@ -44,6 +46,8 @@ MS lists for the GRCh37 and 38 are available from https://github.com/afujimoto/M
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellite\> \<Sequence of microsatellite> \<number of reads with length of microsatellite (length;number of reads)\> \<genotype\> \<calling information (2nd major allele, number of reads, variant allele frequency)\>  
 22      17282432        17282438        (A)n    AAAAAAA 7;44    7/7     -  
 22      17282577        17282589        (A)n    AAAAAAAAAAAAA   13;24,14;3      13/14   minor_allele=14;L=-3.03;Number=3;VAF=0.11 
+
+"LOW" means that low depth of coverage and genotype was not obtained.
 
 
 ## Usage
