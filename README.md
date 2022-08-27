@@ -85,6 +85,8 @@ ERROR_RATE_TABLE; Path of error rate matrix (VIMcall/Error_rate_matrix.txt)
 ## Performance
 The performance of this tool is described in Fujimoto et al. (Genome Research (2020)) and Gochi et al. (Human Genetics (2022)).
 
+https://genome.cshlp.org/content/early/2020/03/16/gr.255026.119  
+
 ## Licence
 GPL
 
