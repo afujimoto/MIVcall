@@ -1,6 +1,6 @@
 # *MIVcall*
 
-A software to indetify indels in microsatellite regions
+A software to identify indels in microsatellite regions
 
 Overview
 1. Extract reads covering microsatellite regions from a bam file
