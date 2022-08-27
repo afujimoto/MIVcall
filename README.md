@@ -20,7 +20,7 @@ python3
 **bam file**; Sorted bam (index file for bam (.bai) is required.)
 
 
-**microsatellite region file (MS list1)**; List of microsatellites (tab-separated text file). MS list1 for the human genome is available from Releases. User-defined microsatellite lists can be used. 
+**microsatellite region file (MS list1)**; List of microsatellites (tab-separated text file). User-defined microsatellite lists can be used. 
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellite\>  
 chr1    822365  822369  G  
@@ -28,7 +28,7 @@ chr1    834138  834143  A
 chr1    834753  834758  G  
 chr1    834982  834986  G
 
-**microsatellite region file (MS list2)**; List of microsatellites (tab-separated text file). MS list2 for the human genome is available from Releases. User-defined microsatellite lists can be used (Please extend 10bp of the MS regions in the MS list1). 
+**microsatellite region file (MS list2)**; List of microsatellites (tab-separated text file). User-defined microsatellite lists can be used (Please extend 10bp of the MS regions in the MS list1). 
 
 \<chr\> \<start\> \<end\> \<repeat unit of microsatellite\>  
 chr1    822355  822379  G  
