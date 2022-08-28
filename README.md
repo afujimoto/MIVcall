@@ -4,7 +4,7 @@ A software to identify indels in microsatellite (MS) regions.
 MIVcall analyzes short-read sequencing data (illumina) to detect indels in MS regions. MIVcall counts the length of each MS in each read. When multiple lengths are observed in a MS locus in a sample, the most frequent pattern is assumed to be present, and the second most frequent pattern is examined. The likelihood value (L) is calculated based on the number of reads and the difference in length between the most frequent pattern and the second most frequent pattern. Genotypes are determined based on the likelihood value, the number of reads of each allele, and variant allele frequency (VAF). 
 
 
-Overview
+Overview of Data Processing
 1. Extract reads covering microsatellite regions from a bam file
 2. Analyze repeat lengths 
 3. Calculate likelihood using an error rate matrix, and identify indels in microsatellite regions
